@@ -2,7 +2,7 @@
 shopt -s extglob
 
 read -p "Enter mobile number:: " mob
-pattern='^([91])+([ ])+([1-9]{1}[0-9]{9})'
+pattern="^91\s[1-9]{10}$"
 
 if [[ $mob =~ $pattern ]]
 then
